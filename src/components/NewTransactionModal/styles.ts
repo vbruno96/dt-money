@@ -61,7 +61,15 @@ export const Content = styled(Dialog.Content)`
       cursor: pointer;
       transition: background 0.4s;
 
-      &:hover {
+      &:disabled {
+        opacity: 0.6;
+
+        svg {
+          animation: rotate infinite 1.4s linear;
+        }
+      }
+
+      &:not(:disabled):hover {
         background: ${(props) => props.theme['green-700']};
       }
     }

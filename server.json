@@ -15,6 +15,30 @@
       "category": "Alimentação",
       "price": 32,
       "createdAt": "2023-02-26T17:53:58.185Z"
+    },
+    {
+      "category": "Alimentação",
+      "description": "Pizza",
+      "price": 66,
+      "type": "outcome",
+      "createdAt": "2023-03-01T22:46:20.677Z",
+      "id": 3
+    },
+    {
+      "category": "Venda",
+      "description": "Desenvolvimento app",
+      "price": 12000,
+      "type": "income",
+      "createdAt": "2023-03-01T22:58:46.780Z",
+      "id": 4
+    },
+    {
+      "category": "Alimentação",
+      "description": "Pão",
+      "price": 10,
+      "type": "outcome",
+      "createdAt": "2023-03-01T23:01:51.896Z",
+      "id": 5
     }
   ]
 }
