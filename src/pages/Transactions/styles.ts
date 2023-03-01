@@ -17,6 +17,7 @@ export const TransactionTable = styled.table`
     padding: 1.25rem 2rem;
 
     &:first-child {
+      width: 50%;
       border-top-left-radius: 6px;
       border-bottom-left-radius: 6px;
     }
