@@ -29,8 +29,17 @@ export const SearchFormContainer = styled.form`
     padding: 1rem;
     font-weight: 700;
     transition: all 0.4s;
+    cursor: pointer;
 
-    &:hover {
+    &:disabled {
+      opacity: 0.6;
+
+      svg {
+        animation: rotate infinite 1.4s linear;
+      }
+    }
+
+    &:not(:disabled):hover {
       background: ${(props) => props.theme['green-500']};
       color: ${(props) => props.theme.white};
       border: 1px solid ${(props) => props.theme['green-500']};
