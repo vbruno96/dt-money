@@ -87,8 +87,9 @@ interface TransactionTypeButtonProps {
   variant: 'income' | 'outcome'
 }
 
-// eslint-disable-next-line prettier/prettier
-export const TransactionTypeButton = styled(RadioGroup.Item) <TransactionTypeButtonProps>`
+export const TransactionTypeButton = styled(
+  RadioGroup.Item,
+)<TransactionTypeButtonProps>`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -103,9 +104,9 @@ export const TransactionTypeButton = styled(RadioGroup.Item) <TransactionTypeBut
 
   svg {
     color: ${(props) =>
-    props.variant === 'income'
-      ? props.theme['green-300']
-      : props.theme['red-300']};
+      props.variant === 'income'
+        ? props.theme['green-300']
+        : props.theme['red-300']};
   }
 
   &[data-state='unchecked']:hover {
@@ -114,9 +115,9 @@ export const TransactionTypeButton = styled(RadioGroup.Item) <TransactionTypeBut
 
   &[data-state='checked'] {
     background: ${(props) =>
-    props.variant === 'income'
-      ? props.theme['green-500']
-      : props.theme['red-500']};
+      props.variant === 'income'
+        ? props.theme['green-500']
+        : props.theme['red-500']};
     color: ${(props) => props.theme.white};
 
     svg {
